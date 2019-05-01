@@ -14,7 +14,7 @@ FUCoolapk 是一个简单的反酷安开屏广告模块。在您安装该模块�
 
 [Lanzoushare/蓝奏云](http://t.cn/ESovBa3)
 
-[GitHub Release](https://github.com/Flyfish233/FUCoolapK/release)
+[GitHub Releases](https://github.com/Flyfish233/FUCoolapK/releases)
 
 [直接下载 master 仓库](https://github.com/Flyfish233/FUCoolapK/archive/master.zip)
 
