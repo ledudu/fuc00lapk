@@ -7,7 +7,7 @@ FUCoolapk 是一个简单的反酷安开屏广告模块。在您安装该模块�
 
 ## 请加入 Telegram 频道，获取最新的相关消息与更新！
 
-[FUCoolapk Project](t.me/fucoolapk)
+[FUCoolapk Project](https://t.me/fucoolapk)
 
 
 ## 下载
