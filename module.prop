@@ -1,0 +1,7 @@
+id=FUCoolapk
+name=FUCoolapK Beta
+version=9.2Beta2
+versionCode=1
+author=Flyfish233,based on 幻了个城fly
+description=This module will replace a file to zero to disable the advertisement of latest beta Coolapk.
+minMagisk=1500
