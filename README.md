@@ -9,4 +9,5 @@ FUCoolapk 是一个简单的反酷安开屏广告模块。在您安装该模块�
 Based on Repo  [magisk-module-template-vr25-cn](https://github.com/E7KMbb/magisk-module-template-vr25-cn)
 
 Thanks to @幻了个城fly E7KMbb(GitHub) @cjybyjk VR25(XDA)
+
 #GH PAGES coming soon
