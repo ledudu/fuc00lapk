@@ -1,27 +1,3 @@
-##########################################################################################
-#
-# Magisk Module Template Config Script
-# by topjohnwu
-#
-##########################################################################################
-##########################################################################################
-#
-# Instructions:
-#
-# 1. Place your files into system folder (delete the placeholder file)
-# 2. Fill in your module's info into module.prop
-# 3. Configure the settings in this file (config.sh)
-# 4. If you need boot scripts, add them into common/post-fs-data.sh or common/service.sh
-# 5. Add your additional or modified system properties into common/system.prop
-#
-##########################################################################################
-
-##########################################################################################
-# Configs
-##########################################################################################
-
-# Set to true if you need to enable Magic Mount
-# Most mods would like it to be enabled
 AUTOMOUNT=false
 
 # Set to true if you need to load system.prop
@@ -42,7 +18,7 @@ LATESTARTSERVICE=false
 print_modname() {
   ui_print "*******************************"
   ui_print "*               FUCoolapk       *"
-  ui_print "*      For Coolapk 9.2-beta2    *"
+  ui_print "*       A L P H A: MAY NOT WORKING    *"
   ui_print "*******************************"
 }
 
@@ -92,11 +68,10 @@ set_permissions() {
 # Custom Functions
 ##########################################################################################
 
-# This file (config.sh) will be sourced by the main flash script after util_functions.sh
-# If you need custom logic, please add them here as functions, and call these functions in
-# update-binary. Refrain from adding code directly into update-binary, as it will make it
-# difficult for you to migrate your modules to newer template versions.
-# Make update-binary as clean as possible, try to only do function calls in it.
-rm /data/media/0/Android/data/com.coolapk.market/cache/splash_ad_cache/tt_splash_image_cache
-touch /data/media/0/Android/data/com.coolapk.market/cache/splash_ad_cache/tt_splash_image_cache
-chmod 0555 /data/media/0/Android/data/com.coolapk.market/cache/splash_ad_cache/tt_splash_image_cache
+# 
+echo - "Deleting GDT AD Folder..."
+rm -rf /data/data/com.coolapk.market/cache/GDTDOWNLOAD
+touch /data/data/com.coolapk.market/cache/GDTDOWNLOAD
+echo "- Setting Permissions..."
+chmod -R 0000 /data/data/com.coolapk.market/cache/GDTDOWNLOAD
+echo "- Patched. All Done!"
