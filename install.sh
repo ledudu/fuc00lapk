@@ -1,5 +1,5 @@
 ##########################################################################################
-# REAL OPERATIONS
+# OPERATIONS
 ##########################################################################################
   echo "*******************"
   echo " FucoolapK Re:Fuck"
@@ -8,18 +8,16 @@
   #echo "Or Some Features May Not Working."
   #echo "请使用 Magisk Manager 而不是 Recovery 安装此模块，不然一些功能将无法正常操作。"
   #echo " "
-  echo "安装完成后显示安装失败，是正常的"
-  echo "It is normal that the installation will be failed."
   echo "*******************"
   echo " Powered by Magisk "
   echo "*******************"
 
-echo '(1/1) Operating Userdata...'
+echo '(1/1) Patching Userdata...'
 echo - "Deleting GDT AD Folder..."
 rm -rf /data/data/com.coolapk.market/cache/GDTDOWNLOAD
-touch /data/data/com.coolapk.market/cache/GDTDOWNLOAD
+mkdir /data/data/com.coolapk.market/cache/GDTDOWNLOAD
 echo "- Setting Permissions..."
-chmod -R 0000 /data/data/com.coolapk.market/cache/GDTDOWNLOAD
+chmod -R 0000 /data/data/com.coolapk.market/cache/GDTDOWNLOAD/
 echo "- Userdata Patched."
 
 #echo '(2/2) Disabling Splash Activities... (NOT WORKING NOW)'
