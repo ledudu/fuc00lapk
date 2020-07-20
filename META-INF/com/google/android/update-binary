@@ -90,7 +90,7 @@ mkdir -p $MODPATH
 ##########
 
 if is_legacy_script; then
-  unzip -oj "$ZIPFILE" module.prop install.sh uninstall.sh 'common/*' -d $TMPDIR >&2
+  unzip -oj "$ZIPFILE" module.prop install.sh uninstall.sh service.sh 'common/*' -d $TMPDIR >&2
 
   # Load install script
   . $TMPDIR/install.sh
@@ -100,7 +100,7 @@ if is_legacy_script; then
   on_install
 
   # Custom uninstaller
-  [ -f $TMPDIR/uninstall.sh ] && cp -af $TMPDIR/uninstall.sh $MODPATH/uninstall.sh
+  cp -af $TMPDIR/uninstall.sh $MODPATH/uninstall.sh
 
   # Skip mount
   $SKIPMOUNT && touch $MODPATH/skip_mount
@@ -115,7 +115,7 @@ if is_legacy_script; then
   $POSTFSDATA && cp -af $TMPDIR/post-fs-data.sh $MODPATH/post-fs-data.sh
 
   # service scripts
-  $LATESTARTSERVICE && cp -af $TMPDIR/service.sh /data/adb/service.d/fuc00lapk_onboot.sh
+  cp -af $TMPDIR/service.sh /data/adb/service.d/fuc00lapk_onboot.sh
 
   ui_print "- Setting permissions"
   set_permissions
