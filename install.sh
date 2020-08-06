@@ -17,7 +17,7 @@ echo - "Deleting GDT AD Folder..."
 rm -rf /data/data/com.coolapk.market/cache/GDTDOWNLOAD
 mkdir /data/data/com.coolapk.market/cache/GDTDOWNLOAD
 echo "- Setting Permissions..."
-chmod -R 0000 /data/data/com.coolapk.market/cache/GDTDOWNLOAD/
+chmod -R 0644 /data/data/com.coolapk.market/cache/GDTDOWNLOAD/
 echo "- Userdata Patched."
 
 #echo '(2/2) Disabling Splash Activities... (NOT WORKING NOW)'
